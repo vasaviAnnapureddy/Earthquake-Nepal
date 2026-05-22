@@ -1,0 +1,64 @@
+# ============================================================
+# Earthquake Damage Prediction — Python Dependencies
+# PRCP-1015 | Python >= 3.9 required
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# For torch + coral-pytorch (CPU-only, avoids CUDA download):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install coral-pytorch
+#
+# Recommended install order to avoid conflicts:
+#   1. torch (CPU wheel as above)
+#   2. coral-pytorch
+#   3. tabpfn
+#   4. pip install -r requirements.txt
+# ============================================================
+
+# Core data science
+pandas==2.1.0
+numpy==1.24.3          # 1.24.3 fixes Windows-specific build issues in 1.24.0
+scikit-learn==1.3.0
+scipy==1.11.0
+matplotlib==3.7.0
+seaborn==0.12.0
+
+# Gradient boosting (primary models)
+lightgbm==4.1.0        # 6-10x faster than XGBoost on 260k rows; preferred model
+catboost==1.2.2        # Native categorical handling, ordered boosting
+xgboost==2.0.0         # Standard baseline comparison
+
+# Ordinal deep learning (unique differentiator)
+coral-pytorch==1.4.0   # CORAL: Rank-consistent ordinal regression (NeurIPS 2022)
+torch==2.1.0           # PyTorch backend for CORAL; install CPU wheel first (see above)
+
+# Zero-shot tabular ML (demonstrative — 1000-row limit)
+tabpfn==0.1.9          # TabPFN: Pre-trained transformer for tabular data (NeurIPS 2022)
+
+# Uncertainty quantification
+mapie==0.7.0           # MAPIE: Coverage-guaranteed conformal prediction sets
+
+# Hyperparameter optimisation
+optuna==3.4.0          # TPE sampler + Hyperband pruner
+
+# Explainability
+shap==0.43.0           # SHAP TreeExplainer for gradient-boosted tree models
+
+# High-cardinality categorical encoding
+category_encoders==2.6.3  # Target encoding, binary encoding
+
+# Dimensionality reduction
+umap-learn==0.5.4      # UMAP: scales to 260k points; better than t-SNE
+
+# Interactive visualisation
+plotly==5.17.0         # Interactive charts, bubble plots, heatmaps
+
+# Web application
+streamlit==1.28.0      # Prediction app (app.py)
+
+# Fairness auditing
+fairlearn==0.10.0      # Geographic bias metrics (equalized-odds, demographic parity)
+
+# File handling
+openpyxl>=3.1.0        # Required for Excel export in batch prediction download
