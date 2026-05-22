@@ -1,7 +1,7 @@
 # 🌍 Earthquake Building Damage Predictor
 ### Nepal Gorkha Earthquake 2015 — AI-Powered Risk Assessment
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vasaviannapureddy-earthquake-nepal-app-main.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://earthquake-nepal-htwugchojsaaljti3we64x.streamlit.app)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -9,7 +9,7 @@
 ---
 
 ## 🔗 Live Demo
-**👉 [Click here to open the app](https://vasaviannapureddy-earthquake-nepal-app-main.streamlit.app)**
+**👉 [Click here to open the app](https://earthquake-nepal-htwugchojsaaljti3we64x.streamlit.app)**
 
 ---
 
